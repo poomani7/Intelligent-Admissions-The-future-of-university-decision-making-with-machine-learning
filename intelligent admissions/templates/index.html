@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligent Admissions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sytle.css') }}">
+</head>
+<body class="back">
+	<h1>Intelligent Admissions</h1>
+	<form method="POST" action="/">
+		<label>GRE Score:</label>
+		<input type="text" name="gre_score" required><br><br>
+		<label>TOEFL Score:</label>
+		<input type="text" name="toefl_score" required><br><br>
+		<label>University Rating:</label>
+        <td>
+            <select name="university_rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </td><br><br>
+		<label>SOP:</label>
+		<input type="text" name="sop"><br><br>
+		<label>LOR:</label>
+		<input type="text" name="lor"><br><br>
+		<label>CGPA:</label>
+		<input type="text" name="cgpa" required><br><br>
+		<label>Research:</label>
+        
+            <div>
+                <input type="radio" id="Netflix" name="brand" value="Netflix">
+                <label for="Netflix">Research</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="Audi" name="brand" value="Audi">
+                <label for="Audi">No Research</label>
+              </div>
+
+        <br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

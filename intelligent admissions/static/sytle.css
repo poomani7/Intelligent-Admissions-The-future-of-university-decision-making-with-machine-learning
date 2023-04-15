@@ -1,0 +1,71 @@
+/* styles.css */
+
+.back {
+  background-image: url("./Canva\ 100\ Design\ Milestone\ Badge.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.front {
+  background-image: url("https://www.connerash.com/blog/wp-content/uploads/2019/08/College_Students.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline;
+    margin-top: 50px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .success {
+    color: green;
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  .medium {
+    color: rgb(10, 21, 233);
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  .failure {
+    color: rgb(214, 10, 10);
+    font-size: medium;
+    font-weight: 600;
+  }
+  input[type="number"],
+  select {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }  

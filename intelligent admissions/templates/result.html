@@ -1,0 +1,23 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intelligent Admissions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sytle.css') }}">
+  </head>
+  <body class="front" >
+    <div class="container">
+      <h1>Prediction Results</h1>
+      {% if prediction %}
+       {%if prediction >= 70 %}
+          <p class="success">Congratulations! You have a high chance of being accepted. 👍</p>
+        {% elif prediction >=50 and prediction < 70 %}
+          <p class="medium">I hope, you have a medium  chance of being accepted.🤔 </p>
+          {% else %}
+          <p class="failure">Sorry, you have a low chance of being accepted.👎🏽 </p>
+      {% endif %}
+    {% endif %}
+      <a href="/">Go Back</a>
+    </div>
+  </body>
+</html>
